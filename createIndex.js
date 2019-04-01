@@ -7,7 +7,9 @@ const createIndex = async function(indexName){
 
 module.exports = createIndex;
 
-
+/**
+ * Example
+ */
 async function test(){
     try {
         const resp = await createIndex('blog');
@@ -16,4 +18,4 @@ async function test(){
         console.log(e);
     }
 }
-test();
+// test();
