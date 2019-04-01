@@ -19,7 +19,7 @@ async function test(){
                 .... article`
     }
     try {
-        const resp = await insertDoc('blog', 2, 'test', data);
+        const resp = await insertDoc('blog', 2, 'ciphertrick', data);
         console.log(resp);
     } catch (e) {
         console.log(e);
@@ -27,4 +27,4 @@ async function test(){
 }
 
 
-test();
+//test();

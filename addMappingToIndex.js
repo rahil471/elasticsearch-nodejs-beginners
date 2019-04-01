@@ -11,6 +11,10 @@ const addmappingToIndex = async function(indexName, mappingType, mapping){
 module.exports = addmappingToIndex;
 
 
+// test function to explain how to invoke.
+/**
+ * Example
+ */
 async function test(){
     const mapping = {
         properties: {
@@ -30,7 +34,7 @@ async function test(){
         }
     }
     try {
-        const resp = await addmappingToIndex('blog', 'test', mapping);
+        const resp = await addmappingToIndex('blog', 'ciphertrick', mapping);
         console.log(resp);
     } catch (e) {
         console.log(e);
@@ -38,4 +42,4 @@ async function test(){
 }
 
 
-test();
+// test();

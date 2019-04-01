@@ -9,14 +9,12 @@ const searchDoc = async function(indexName, mappingType, payload){
 
 module.exports = searchDoc;
 
-/**
- * Example
- */
+
 async function test(){
     const body = {
         query: {
-            match: {
-                "title": "Learn"
+            match_phrase_prefix: {
+                "title": "Lea"
             }
         }
     }
